@@ -2,14 +2,13 @@ package com.thingcinema.filmsarchive.repositories;
 
 import com.thingcinema.filmsarchive.models.Movie;
 
-import java.util.Map;
+import java.util.List;
 
 public interface MovieRepository {
 
     void createMovie(Movie movie);
-    Map<String, Movie> getMovies();
-    Movie getMovieByName(String name);
-    void updateMovie(String name, Movie movie);
-    void deleteMovie(String name);
+    List<Movie> getMovies();
+    Movie getMovieById(int id);
+    void deleteMovie(int id);
 
 }

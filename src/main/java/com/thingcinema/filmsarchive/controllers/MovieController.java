@@ -5,7 +5,7 @@ import com.thingcinema.filmsarchive.services.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Map;
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/movies")
@@ -18,13 +18,13 @@ public class MovieController {
     }
 
     @GetMapping
-    public Map<String, Movie> getMovies(){
+    public List<Movie> getMovies(){
         return service.getMovies();
     }
 
-    @GetMapping("/{name}")
-    public Movie getMovieById(@PathVariable String name) {
-        return service.getMovieByName(name);
+    @GetMapping("/{id}")
+    public Movie getMovieById(@PathVariable int id) {
+        return service.getMovieById(id);
     }
 
     @PostMapping
@@ -32,13 +32,8 @@ public class MovieController {
         service.createMovie(movie);
     }
 
-    @PutMapping
-    public void updateMovie(@PathVariable String name, @RequestBody Movie movie) {
-        service.updateMovie(name, movie);
-    }
-
-    @DeleteMapping
-    public void deleteMovie(@PathVariable String name) {
-        service.deleteMovie(name);
+    @DeleteMapping("/{id}")
+    public void deleteMovie(@PathVariable int id) {
+        service.deleteMovie(id);
     }
 }

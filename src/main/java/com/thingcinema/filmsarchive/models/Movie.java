@@ -2,6 +2,7 @@ package com.thingcinema.filmsarchive.models;
 
 public class Movie {
 
+    private int id;
     private String name;
     private String description;
     private String urlImage;
@@ -10,10 +11,11 @@ public class Movie {
 
     }
 
-    public Movie(String name, String description, String urlImage) {
+    public Movie(String name, String description, String urlImage, int id) {
         setName(name);
         setDescription(description);
         setUrlImage(urlImage);
+        setId(id);
     }
 
 
@@ -39,5 +41,13 @@ public class Movie {
 
     public void setUrlImage(String urlImage) {
         this.urlImage = urlImage;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

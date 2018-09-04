@@ -5,7 +5,7 @@ import com.thingcinema.filmsarchive.repositories.MovieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Map;
+import java.util.List;
 
 @Service
 public class MovieServiceImpl implements MovieService {
@@ -23,22 +23,18 @@ public class MovieServiceImpl implements MovieService {
     }
 
     @Override
-    public Map<String, Movie> getMovies() {
+    public List<Movie> getMovies() {
         return repository.getMovies();
     }
 
     @Override
-    public Movie getMovieByName(String name) {
-      return repository.getMovieByName(name);
+    public Movie getMovieById(int id) {
+      return repository.getMovieById(id);
     }
 
-    @Override
-    public void updateMovie(String name, Movie movie) {
-         repository.updateMovie(name, movie);
-    }
 
     @Override
-    public void deleteMovie(String name) {
-        repository.deleteMovie(name);
+    public void deleteMovie(int id) {
+        repository.deleteMovie(id);
     }
 }
