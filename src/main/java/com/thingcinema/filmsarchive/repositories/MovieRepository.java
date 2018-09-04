@@ -1,11 +1,10 @@
-package com.thingcinema.filmsarchive.services;
-
+package com.thingcinema.filmsarchive.repositories;
 
 import com.thingcinema.filmsarchive.models.Movie;
 
 import java.util.Map;
 
-public interface MovieService {
+public interface MovieRepository {
 
     void createMovie(Movie movie);
     Map<String, Movie> getMovies();

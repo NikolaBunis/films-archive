@@ -1,18 +1,30 @@
 package com.thingcinema.filmsarchive.services;
 
 import com.thingcinema.filmsarchive.models.Movie;
+import com.thingcinema.filmsarchive.repositories.MovieRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import java.util.List;
+import java.util.Map;
 
+@Service
 public class MovieServiceImpl implements MovieService {
-    @Override
-    public void createMovie(Movie movie) {
-        
+
+    private MovieRepository repository;
+
+    @Autowired
+    public MovieServiceImpl(MovieRepository repository) {
+        this.repository = repository;
     }
 
     @Override
-    public List<Movie> getMovies() {
-        return null;
+    public void createMovie(Movie movie) {
+        repository.createMovie(movie);
+    }
+
+    @Override
+    public Map<String, Movie> getMovies() {
+        return repository.getMovies();
     }
 
     @Override
