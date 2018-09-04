@@ -40,5 +40,5 @@ public class MovieController {
     @DeleteMapping
     public void deleteMovie(@PathVariable String name) {
         service.deleteMovie(name);
-    } 
+    }
 }

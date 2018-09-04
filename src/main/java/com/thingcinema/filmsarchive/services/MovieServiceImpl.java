@@ -29,16 +29,16 @@ public class MovieServiceImpl implements MovieService {
 
     @Override
     public Movie getMovieByName(String name) {
-        return null;
+      return repository.getMovieByName(name);
     }
 
     @Override
     public void updateMovie(String name, Movie movie) {
-
+         repository.updateMovie(name, movie);
     }
 
     @Override
     public void deleteMovie(String name) {
-
+        repository.deleteMovie(name);
     }
 }
