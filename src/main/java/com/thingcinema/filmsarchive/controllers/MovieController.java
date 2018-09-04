@@ -5,8 +5,7 @@ import com.thingcinema.filmsarchive.services.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/movies")
@@ -19,7 +18,7 @@ public class MovieController {
     }
 
     @GetMapping
-    public List<Movie> getMovies(){
+    public Map<String, Movie> getMovies(){
         return service.getMovies();
     }
 
