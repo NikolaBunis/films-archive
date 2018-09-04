@@ -11,6 +11,12 @@ public class Movie {
 
     }
 
+    public Movie(String name, String description, String urlImage) {
+        setName(name);
+        setDescription(description);
+        setUrlImage(urlImage);
+    }
+
     public Movie(String name, String description, String urlImage, int id) {
         setName(name);
         setDescription(description);

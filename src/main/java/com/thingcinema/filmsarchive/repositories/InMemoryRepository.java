@@ -23,9 +23,8 @@ public class InMemoryRepository implements MovieRepository {
 
     @Override
     public void createMovie(Movie movie) {
-
-       //TODO generate ID logic then add to movie object
-
+        Movie lastMovie = allMovies.get(allMovies.size()-1);
+        movie.setId(lastMovie.getId()+1);
         allMovies.add(movie);
     }
 
@@ -36,11 +35,20 @@ public class InMemoryRepository implements MovieRepository {
 
     @Override
     public Movie getMovieById(int id) {
-        //TODO implement logic
+        for (Movie movie : allMovies) {
+            if(id == movie.getId()){
+                return movie;
+            }
+        }
+        return null;
     }
 
     @Override
     public void deleteMovie(int id) {
-
+        for (Movie movie : allMovies) {
+            if(id == movie.getId()){
+                allMovies.remove(movie);
+            }
+        }
     }
 }
