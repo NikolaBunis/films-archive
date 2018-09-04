@@ -1,10 +1,14 @@
-package models;
+package com.thingcinema.filmsarchive.models;
 
 public class Movie {
 
-    String name;
-    String description;
-    String urlImage;
+    private String name;
+    private String description;
+    private String urlImage;
+
+    public Movie(){
+
+    }
 
     public Movie(String name, String description, String urlImage) {
         setName(name);
