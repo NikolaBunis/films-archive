@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/films-archive.iml" filepath="$PROJECT_DIR$/.idea/modules/films-archive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/films-archive_main.iml" filepath="$PROJECT_DIR$/.idea/modules/films-archive_main.iml" group="films-archive" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/films-archive_test.iml" filepath="$PROJECT_DIR$/.idea/modules/films-archive_test.iml" group="films-archive" />
+    </modules>
+  </component>
+</project>
