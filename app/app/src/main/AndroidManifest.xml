@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".views.MovieArchive.MovieArchiveActivity"></activity>
+        <activity android:name=".views.MovieArchive.MovieArchiveActivity" />
+        <activity android:name=".views.MovieArchive.AdditionFormActivity" />
+        <activity android:name=".views.MovieArchive.DeletionFormActivity"></activity>
     </application>
 
 </manifest>
