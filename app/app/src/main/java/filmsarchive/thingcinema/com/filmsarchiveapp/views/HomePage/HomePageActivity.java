@@ -4,6 +4,7 @@ import android.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import butterknife.ButterKnife;
 import filmsarchive.thingcinema.com.filmsarchiveapp.R;
 
 public class HomePageActivity extends AppCompatActivity {
@@ -13,6 +14,8 @@ public class HomePageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
+
+        ButterKnife.bind(this);
 
         setMainFragment();
 

@@ -12,6 +12,8 @@ import android.widget.ImageView;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import filmsarchive.thingcinema.com.filmsarchiveapp.R;
 import filmsarchive.thingcinema.com.filmsarchiveapp.views.MovieArchive.MovieArchiveActivity;
 
@@ -21,9 +23,11 @@ import filmsarchive.thingcinema.com.filmsarchiveapp.views.MovieArchive.MovieArch
 public class HomePageFragment extends Fragment implements HomePageContracts.View {
 
 
-   // private HomePageContracts.Presenter mPresenter;
-    private ImageView mBackgroundImageView;
-    private View mArchiveButton;
+    // private HomePageContracts.Presenter mPresenter;
+    @BindView(R.id.background_image)
+    ImageView mBackgroundImageView;
+    @BindView(R.id.movie_archive_button)
+    View mArchiveButton;
 
     public HomePageFragment() {
         // Required empty public constructor
@@ -35,6 +39,9 @@ public class HomePageFragment extends Fragment implements HomePageContracts.View
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home_page, container, false);
+
+        ButterKnife.bind(this, view);
+
 
         addBackgroundImage(view);
         addArchiveButton(view);
@@ -55,14 +62,15 @@ public class HomePageFragment extends Fragment implements HomePageContracts.View
     @Override
     public void setPresenter(HomePageContracts.Presenter presenter) {
 
-    //    mPresenter = presenter;
+        //    mPresenter = presenter;
 
     }
 
     @Override
     public void addBackgroundImage(View view) {
 
-        mBackgroundImageView = view.findViewById(R.id.background_image);
+
+        //mBackgroundImageView = view.findViewById(R.id.background_image);
 
         Picasso.get()
                 .load("https://firebasestorage.googleapis.com/v0/b/nbateamwiki.appspot.com/o/ProjectThingCinema%2FFilm.-Movie-clapper-and-film-reel-on-a-wooden-background-WW-56277468.jpeg?alt=media&token=5634610d-122e-4c6f-8683-80b48bed3c51")
@@ -75,7 +83,7 @@ public class HomePageFragment extends Fragment implements HomePageContracts.View
     @Override
     public void addArchiveButton(View view) {
 
-        mArchiveButton = view.findViewById(R.id.movie_archive_button);
+        //mArchiveButton = view.findViewById(R.id.movie_archive_button);
 
         mArchiveButton.setOnClickListener(item -> startMovieArchiveActivity());
 

@@ -8,17 +8,23 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import filmsarchive.thingcinema.com.filmsarchiveapp.R;
 
 public class MovieInfoActivity extends AppCompatActivity {
 
-    private TextView mMovieDescription;
-    private ImageView mMoviePosterImage;
+    @BindView(R.id.movie_description)
+     TextView mMovieDescription;
+    @BindView(R.id.movie_poster_image)
+     ImageView mMoviePosterImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie_info);
+
+        ButterKnife.bind(this);
 
         Intent intent = getIntent();
 
@@ -28,6 +34,8 @@ public class MovieInfoActivity extends AppCompatActivity {
 
         String text = intent.getStringExtra("movieDescription");
 
+
+
         setPicture(picUrl);
         setText(text);
 
@@ -36,14 +44,14 @@ public class MovieInfoActivity extends AppCompatActivity {
 
     private void setText(String text) {
 
-        mMovieDescription = findViewById(R.id.player_info_text);
+      //  mMovieDescription = findViewById(R.id.movie_description);
         mMovieDescription.setText(text);
 
     }
 
     private void setPicture(String picUrl) {
 
-        mMoviePosterImage = findViewById(R.id.player_picture);
+        //mMoviePosterImage = findViewById(R.id.movie_poster);
 
         Picasso.get().load(picUrl)
                 .placeholder(R.drawable.loader)

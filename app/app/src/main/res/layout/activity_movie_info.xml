@@ -14,14 +14,14 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/player_picture"
+                android:id="@+id/movie_poster_image"
                 android:layout_width="match_parent"
                 android:layout_height="350dp"
                 android:scaleType="centerCrop"/>
 
             <TextView
-                android:id="@+id/player_info_text"
-                android:layout_below="@id/player_picture"
+                android:id="@+id/movie_description"
+                android:layout_below="@id/movie_poster_image"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text=" " />
