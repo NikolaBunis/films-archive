@@ -16,6 +16,8 @@ import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
 import filmsarchive.thingcinema.com.filmsarchiveapp.R;
+import filmsarchive.thingcinema.com.filmsarchiveapp.views.MovieArchive.AdditionFormActivity.AdditionFormActivity;
+import filmsarchive.thingcinema.com.filmsarchiveapp.views.MovieArchive.DeletionFormActivity.DeletionFormActivity;
 
 /**
  * A simple {@link Fragment} subclass.

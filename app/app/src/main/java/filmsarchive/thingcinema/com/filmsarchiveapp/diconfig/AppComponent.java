@@ -14,10 +14,18 @@ import filmsarchive.thingcinema.com.filmsarchiveapp.AndroidApplication;
 @Component(modules = {
         ApplicationModule.class,
         ActivityBindingModule.class,
-        AndroidSupportInjectionModule.class})
+        AndroidSupportInjectionModule.class,
+        AsyncModule.class,
+        HttpModule.class,
+        ParserModule.class,
+        ServicesModule.class,
+        ValidatorsModule.class
+
+
+})
 public interface AppComponent extends AndroidInjector<AndroidApplication> {
 
-  //  TasksRepository getTasksRepository();
+    //  TasksRepository getTasksRepository();
 
     // Gives us syntactic sugar. we can then do DaggerAppComponent.builder().application(this).build().inject(this);
     // never having to instantiate any modules or say which module we are passing the application to.

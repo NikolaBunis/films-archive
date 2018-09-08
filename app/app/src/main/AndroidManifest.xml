@@ -20,8 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".views.MovieArchive.MovieArchiveActivity" />
-        <activity android:name=".views.MovieArchive.AdditionFormActivity" />
-        <activity android:name=".views.MovieArchive.DeletionFormActivity" />
+        <activity android:name=".views.MovieArchive.AdditionFormActivity.AdditionFormActivity" />
+        <activity android:name=".views.MovieArchive.DeletionFormActivity.DeletionFormActivity" />
         <activity android:name=".views.MovieArchive.MovieInfoActivity"></activity>
     </application>
 

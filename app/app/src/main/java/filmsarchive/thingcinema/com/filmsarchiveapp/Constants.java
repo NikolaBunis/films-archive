@@ -5,4 +5,8 @@ public class Constants {
             = "http://192.168.2.109:8080/api";
 
 
+    public static final int MOVIE_DESCRIPTION_MIN_LENGHT = 500;
+    public static final int MOVIE_DESCRIPTION_MAX_LENGHT = 100;
+    public static final int MOVIE_NAME_MIN_LENGHT = 1;
+    public static final int MOVIE_NAME_MAX_LENGHT = 100;
 }
