@@ -12,8 +12,11 @@ import android.widget.ImageView;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
 
+import javax.inject.Inject;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import dagger.android.support.DaggerFragment;
 import filmsarchive.thingcinema.com.filmsarchiveapp.R;
 import filmsarchive.thingcinema.com.filmsarchiveapp.views.MovieArchive.MovieArchiveActivity;
 
@@ -29,6 +32,7 @@ public class HomePageFragment extends Fragment implements HomePageContracts.View
     @BindView(R.id.movie_archive_button)
     View mArchiveButton;
 
+    @Inject
     public HomePageFragment() {
         // Required empty public constructor
     }

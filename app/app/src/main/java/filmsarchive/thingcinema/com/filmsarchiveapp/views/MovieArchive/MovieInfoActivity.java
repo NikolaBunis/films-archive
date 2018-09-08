@@ -10,14 +10,15 @@ import com.squareup.picasso.Picasso;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import dagger.android.support.DaggerAppCompatActivity;
 import filmsarchive.thingcinema.com.filmsarchiveapp.R;
 
-public class MovieInfoActivity extends AppCompatActivity {
+public class MovieInfoActivity extends DaggerAppCompatActivity {
 
     @BindView(R.id.movie_description)
-     TextView mMovieDescription;
+    TextView mMovieDescription;
     @BindView(R.id.movie_poster_image)
-     ImageView mMoviePosterImage;
+    ImageView mMoviePosterImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +36,6 @@ public class MovieInfoActivity extends AppCompatActivity {
         String text = intent.getStringExtra("movieDescription");
 
 
-
         setPicture(picUrl);
         setText(text);
 
@@ -44,7 +44,7 @@ public class MovieInfoActivity extends AppCompatActivity {
 
     private void setText(String text) {
 
-      //  mMovieDescription = findViewById(R.id.movie_description);
+        //  mMovieDescription = findViewById(R.id.movie_description);
         mMovieDescription.setText(text);
 
     }
@@ -62,5 +62,5 @@ public class MovieInfoActivity extends AppCompatActivity {
     }
 
 
-    }
+}
 

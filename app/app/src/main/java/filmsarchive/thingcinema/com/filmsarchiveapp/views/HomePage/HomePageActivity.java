@@ -4,12 +4,16 @@ import android.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import javax.inject.Inject;
+
 import butterknife.ButterKnife;
+import dagger.android.support.DaggerAppCompatActivity;
 import filmsarchive.thingcinema.com.filmsarchiveapp.R;
 
-public class HomePageActivity extends AppCompatActivity {
+public class HomePageActivity extends DaggerAppCompatActivity {
 
-    Fragment mHomePageFragment;
+    @Inject
+    HomePageFragment mHomePageFragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +27,7 @@ public class HomePageActivity extends AppCompatActivity {
     }
 
     private void setMainFragment() {
-        mHomePageFragment = HomePageFragment.newInstance();
+       // mHomePageFragment = HomePageFragment.newInstance();
 
         getFragmentManager().beginTransaction().replace(R.id.main_fragment, mHomePageFragment).commit();
 

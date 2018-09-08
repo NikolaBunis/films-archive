@@ -3,9 +3,10 @@ package filmsarchive.thingcinema.com.filmsarchiveapp.views.MovieArchive;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import dagger.android.support.DaggerAppCompatActivity;
 import filmsarchive.thingcinema.com.filmsarchiveapp.R;
 
-public class DeletionFormActivity extends AppCompatActivity {
+public class DeletionFormActivity extends DaggerAppCompatActivity {
 
     public static final long IDENTIFIER = 2;
 

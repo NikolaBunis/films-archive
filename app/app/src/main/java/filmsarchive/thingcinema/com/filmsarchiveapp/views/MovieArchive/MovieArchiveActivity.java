@@ -4,11 +4,12 @@ import android.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import dagger.android.support.DaggerAppCompatActivity;
 import filmsarchive.thingcinema.com.filmsarchiveapp.R;
 import filmsarchive.thingcinema.com.filmsarchiveapp.views.HomePage.HomePageContracts;
 import filmsarchive.thingcinema.com.filmsarchiveapp.views.HomePage.HomePageFragment;
 
-public class MovieArchiveActivity extends AppCompatActivity {
+public class MovieArchiveActivity extends DaggerAppCompatActivity {
 
 
     @Override
