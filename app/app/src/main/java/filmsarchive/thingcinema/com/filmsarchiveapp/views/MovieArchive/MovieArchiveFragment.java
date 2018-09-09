@@ -2,6 +2,7 @@ package filmsarchive.thingcinema.com.filmsarchiveapp.views.MovieArchive;
 
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -107,7 +108,14 @@ public class MovieArchiveFragment extends Fragment implements MovieArchiveContra
 
     @Override
     public void showMovieInfo(Movie movie) {
-        //TODO
+        Intent intent = new Intent(getContext(), MovieInfoActivity.class);
+        intent.putExtra("Movie Name", movie.getName());
+        intent.putExtra("moviePosterImage", movie.getUrlImage());
+        intent.putExtra("movieDescription", movie.getDescription());
+
+        startActivity(intent);
+
+
     }
 
     @Override
