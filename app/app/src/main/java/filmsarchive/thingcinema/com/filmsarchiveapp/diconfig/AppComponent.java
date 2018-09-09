@@ -21,7 +21,8 @@ import filmsarchive.thingcinema.com.filmsarchiveapp.AndroidApplication;
         ServicesModule.class,
         ValidatorsModule.class,
         ViewsModule.class,
-        MovieArchivePresenterModule.class
+        MovieArchivePresenterModule.class,
+        RepositoryModule.class
 
 
 })
