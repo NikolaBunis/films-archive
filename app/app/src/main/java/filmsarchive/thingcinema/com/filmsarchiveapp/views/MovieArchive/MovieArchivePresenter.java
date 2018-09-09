@@ -20,9 +20,9 @@ public class MovieArchivePresenter implements MovieArchiveContracts.Presenter{
     private MovieArchiveContracts.View mView;
 
     @Inject
-    public MovieArchivePresenter(MovieService mMovieService, SchedulerProvider mSchedulerProvider) {
-        this.mMovieService = mMovieService;
-        this.mSchedulerProvider = mSchedulerProvider;
+    public MovieArchivePresenter(MovieService MovieService, SchedulerProvider SchedulerProvider) {
+        mMovieService = MovieService;
+        mSchedulerProvider = SchedulerProvider;
     }
 
     @Override
