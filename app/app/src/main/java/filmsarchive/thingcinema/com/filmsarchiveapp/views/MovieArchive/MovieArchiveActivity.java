@@ -1,6 +1,8 @@
 package filmsarchive.thingcinema.com.filmsarchiveapp.views.MovieArchive;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.app.FragmentTransaction;
 
 import javax.inject.Inject;
 
@@ -16,17 +18,27 @@ public class MovieArchiveActivity extends DaggerAppCompatActivity {
     @Inject
     MovieArchiveFragment mMainFragment;
 
+    @Inject
+    MovieArchiveFragment mMovieArchiveFragment;
+
+    @Inject
+    MovieArchiveContracts.Presenter mMovieArchivePresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie_archive);
-
         ButterKnife.bind(this);
-
         setupDrawer();
         setupMainFragment();
 
+        mMovieArchiveFragment.setPresenter(mMovieArchivePresenter);
+
+        FragmentTransaction transaction = getFragmentManager()
+                .beginTransaction()
+                .replace(R.id.content, mMovieArchiveFragment);
+
+        transaction.commit();
 
     }
 
