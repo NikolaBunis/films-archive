@@ -15,6 +15,10 @@ import com.mikepenz.materialdrawer.model.DividerDrawerItem;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
+import javax.inject.Inject;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import filmsarchive.thingcinema.com.filmsarchiveapp.R;
 import filmsarchive.thingcinema.com.filmsarchiveapp.views.MovieArchive.AdditionFormActivity.AdditionFormActivity;
 import filmsarchive.thingcinema.com.filmsarchiveapp.views.MovieArchive.DeletionFormActivity.DeletionFormActivity;
@@ -24,9 +28,10 @@ import filmsarchive.thingcinema.com.filmsarchiveapp.views.MovieArchive.DeletionF
  */
 public class DrawerAndTitleFragment extends android.app.Fragment {
 
+    @BindView(R.id.drawer_toolbar)
+    Toolbar mDrawer;
 
-    private Toolbar mDrawer;
-
+    @Inject
     public DrawerAndTitleFragment() {
         // Required empty public constructor
     }
@@ -38,11 +43,9 @@ public class DrawerAndTitleFragment extends android.app.Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_drawer_and_title, container, false);
 
-
-        mDrawer = view.findViewById(R.id.drawer_toolbar);
+        ButterKnife.bind(this, view);
 
         setupDrawer();
-
 
         return view;
     }
