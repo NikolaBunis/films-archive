@@ -19,7 +19,8 @@ import filmsarchive.thingcinema.com.filmsarchiveapp.AndroidApplication;
         HttpModule.class,
         ParserModule.class,
         ServicesModule.class,
-        ValidatorsModule.class
+        ValidatorsModule.class,
+        ViewsModule.class
 
 
 })

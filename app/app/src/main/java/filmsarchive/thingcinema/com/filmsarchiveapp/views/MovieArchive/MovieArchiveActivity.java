@@ -16,9 +16,6 @@ public class MovieArchiveActivity extends DaggerAppCompatActivity {
     DrawerAndTitleFragment mDrawerFragment;
 
     @Inject
-    MovieArchiveFragment mMainFragment;
-
-    @Inject
     MovieArchiveFragment mMovieArchiveFragment;
 
     @Inject
@@ -30,13 +27,13 @@ public class MovieArchiveActivity extends DaggerAppCompatActivity {
         setContentView(R.layout.activity_movie_archive);
         ButterKnife.bind(this);
         setupDrawer();
-        setupMainFragment();
+
 
         mMovieArchiveFragment.setPresenter(mMovieArchivePresenter);
 
         FragmentTransaction transaction = getFragmentManager()
                 .beginTransaction()
-                .replace(R.id.content, mMovieArchiveFragment);
+                .replace(R.id.main_fragment, mMovieArchiveFragment);
 
         transaction.commit();
 
@@ -46,11 +43,6 @@ public class MovieArchiveActivity extends DaggerAppCompatActivity {
         getFragmentManager().beginTransaction().replace(R.id.drawer_toolbar, mDrawerFragment).commit();
     }
 
-    private void setupMainFragment() {
-
-        getFragmentManager().beginTransaction().replace(R.id.main_fragment, mMainFragment).commit();
-
-    }
 
 
 }
