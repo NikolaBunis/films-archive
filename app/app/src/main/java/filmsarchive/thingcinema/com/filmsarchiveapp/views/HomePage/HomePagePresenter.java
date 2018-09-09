@@ -1,8 +1,8 @@
 package filmsarchive.thingcinema.com.filmsarchiveapp.views.HomePage;
 
-import android.content.Context;
-import android.content.Intent;
-import filmsarchive.thingcinema.com.filmsarchiveapp.views.MovieArchive.MovieArchiveActivity;
+        import android.content.Context;
+        import android.content.Intent;
+        import filmsarchive.thingcinema.com.filmsarchiveapp.views.MovieArchive.MovieArchiveActivity;
 
 public class HomePagePresenter implements HomePageContracts.Presenter {
 

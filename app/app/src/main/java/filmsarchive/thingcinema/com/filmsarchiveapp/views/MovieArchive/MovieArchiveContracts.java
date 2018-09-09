@@ -14,12 +14,25 @@ public interface MovieArchiveContracts {
 
         void showMovies(List<Movie> movies);
 
+        void showEmptyList();
+
+        void showError(Throwable e);
+
+        void showLoading();
+
+        void hideLoading();
+
+        void showMovieInfo(Movie movie);
 
     }
 
     interface Presenter{
 
         void subscribe(View view);
+
+        void loadMovies();
+
+        void selectMovie(Movie movie);
 
     }
 
