@@ -9,7 +9,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.GridLayout;
+import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -25,19 +28,21 @@ import filmsarchive.thingcinema.com.filmsarchiveapp.models.Movie;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MovieArchiveFragment extends Fragment implements MovieArchiveContracts.View, MoviesAdapter.OnMovieClickListener {
+public class MovieArchiveFragment extends Fragment implements MovieArchiveContracts.View, MoviesAdapter.OnMovieClickListener, AdapterView.OnItemClickListener {
 
     @BindView(R.id.listView_movies)
-    RecyclerView mMoviesView;
+    ListView mMoviesView;
 
     @BindView(R.id.loading)
     ProgressBar mLoadingView;
 
-    @Inject
-    MoviesAdapter mMoviesAdapter;
+    ArrayAdapter<Movie> mMoviesAdapter;
+
+    //@Inject
+    //MoviesAdapter mMoviesAdapter;
 
     private MovieArchiveContracts.Presenter mPresenter;
-    private GridLayoutManager mMoviesViewLayoutManager;
+    // private GridLayoutManager mMoviesViewLayoutManager;
 
     @Inject
     public MovieArchiveFragment() {
@@ -53,16 +58,19 @@ public class MovieArchiveFragment extends Fragment implements MovieArchiveContra
 
         ButterKnife.bind(this, view);
 
-        mMoviesAdapter.setOnMovieClickListener(this);
-        mMoviesView.setAdapter(mMoviesAdapter);
-        mMoviesViewLayoutManager = new GridLayoutManager(getContext(), 2);
-        mMoviesView.setLayoutManager(mMoviesViewLayoutManager);
+        mMoviesAdapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_list_item_1);
+
+
+        // mMoviesAdapter.setOnMovieClickListener(this);
+        // mMoviesView.setAdapter(mMoviesAdapter);
+        // mMoviesViewLayoutManager = new GridLayoutManager(getContext(), 2);
+        //mMoviesView.setLayoutManager(mMoviesViewLayoutManager);
 
         return view;
     }
 
     @Override
-    public void onResume(){
+    public void onResume() {
         super.onResume();
         mPresenter.subscribe(this);
         mPresenter.loadMovies();
@@ -75,9 +83,11 @@ public class MovieArchiveFragment extends Fragment implements MovieArchiveContra
 
     @Override
     public void showMovies(List<Movie> movies) {
-        mMoviesAdapter.clear();
         mMoviesAdapter.addAll(movies);
-        mMoviesAdapter.notifyDataSetChanged();
+
+        mMoviesView.setAdapter(mMoviesAdapter);
+
+        mMoviesView.setOnItemClickListener(this);
     }
 
     @Override
@@ -121,5 +131,14 @@ public class MovieArchiveFragment extends Fragment implements MovieArchiveContra
     @Override
     public void onClick(Movie movie) {
         mPresenter.selectMovie(movie);
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+
+        Movie movie = mMoviesAdapter.getItem(position);
+
+        onClick(movie);
+
     }
 }

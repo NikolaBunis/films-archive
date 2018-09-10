@@ -46,4 +46,9 @@ public class Movie implements Serializable {
     public void setUrlImage(String urlImage) {
         this.urlImage = urlImage;
     }
+
+    @Override
+    public String toString() {
+        return getName().toUpperCase();
+    }
 }
