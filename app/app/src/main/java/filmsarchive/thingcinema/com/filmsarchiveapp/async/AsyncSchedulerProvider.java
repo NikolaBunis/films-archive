@@ -8,7 +8,7 @@ import io.reactivex.schedulers.Schedulers;
 public class AsyncSchedulerProvider implements SchedulerProvider {
     private static SchedulerProvider instance;
 
-    private AsyncSchedulerProvider() {
+    public AsyncSchedulerProvider() {
         //necessary for singleton
     }
 

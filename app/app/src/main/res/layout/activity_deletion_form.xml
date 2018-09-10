@@ -4,4 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.MovieArchive.DeletionFormActivity.DeletionFormActivity" />
+    tools:context=".views.MovieArchive.DeletionFormActivity.DeletionFormActivity">
+
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/movie_list" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+
