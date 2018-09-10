@@ -12,7 +12,7 @@ public interface MovieArchiveContracts {
 
         void setPresenter(Presenter presenter);
 
-        void showMovies(List<Movie> movies);
+        void showMovies();
 
         void showEmptyList();
 
@@ -24,6 +24,7 @@ public interface MovieArchiveContracts {
 
         void showMovieInfo(Movie movie);
 
+        void addMovies(List<Movie> movies);
     }
 
     interface Presenter{

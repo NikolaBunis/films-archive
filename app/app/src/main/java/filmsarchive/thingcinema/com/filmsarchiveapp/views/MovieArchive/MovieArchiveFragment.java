@@ -16,6 +16,7 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -61,6 +62,7 @@ public class MovieArchiveFragment extends Fragment implements MovieArchiveContra
         mMoviesAdapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_list_item_1);
 
 
+
         // mMoviesAdapter.setOnMovieClickListener(this);
         // mMoviesView.setAdapter(mMoviesAdapter);
         // mMoviesViewLayoutManager = new GridLayoutManager(getContext(), 2);
@@ -74,6 +76,7 @@ public class MovieArchiveFragment extends Fragment implements MovieArchiveContra
         super.onResume();
         mPresenter.subscribe(this);
         mPresenter.loadMovies();
+        showMovies();
     }
 
     @Override
@@ -81,9 +84,7 @@ public class MovieArchiveFragment extends Fragment implements MovieArchiveContra
         mPresenter = presenter;
     }
 
-    @Override
-    public void showMovies(List<Movie> movies) {
-        mMoviesAdapter.addAll(movies);
+    public void showMovies() {
 
         mMoviesView.setAdapter(mMoviesAdapter);
 
@@ -125,6 +126,13 @@ public class MovieArchiveFragment extends Fragment implements MovieArchiveContra
 
         startActivity(intent);
 
+
+    }
+
+    @Override
+    public void addMovies(List<Movie> movies) {
+
+        mMoviesAdapter.addAll(movies);
 
     }
 

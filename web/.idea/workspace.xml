@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01c56eb6-328f-4591-b1ae-ae82db6e9cfc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../app/app/src/main/java/filmsarchive/thingcinema/com/filmsarchiveapp/models/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/app/src/main/java/filmsarchive/thingcinema/com/filmsarchiveapp/models/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/app/src/main/java/filmsarchive/thingcinema/com/filmsarchiveapp/views/MovieArchive/MovieArchiveFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/app/src/main/java/filmsarchive/thingcinema/com/filmsarchiveapp/views/MovieArchive/MovieArchiveFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/app/src/main/res/layout/fragment_movie_archive.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/app/src/main/res/layout/fragment_movie_archive.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/app/src/main/java/filmsarchive/thingcinema/com/filmsarchiveapp/views/MovieArchive/AdditionFormActivity/AdditionFormActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/app/src/main/java/filmsarchive/thingcinema/com/filmsarchiveapp/views/MovieArchive/AdditionFormActivity/AdditionFormActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/app/src/main/res/layout/activity_addition_form.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/app/src/main/res/layout/activity_addition_form.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -513,7 +511,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536569106873" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536569112841" />
     <property name="last_opened_file_path" value="$USER_HOME$/AndroidStudioProjects/BelotCountingApp" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -555,7 +553,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4794000" />
+    <option name="totallyTimeSpent" value="5344000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
