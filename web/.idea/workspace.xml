@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01c56eb6-328f-4591-b1ae-ae82db6e9cfc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../app/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../app/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/app/src/main/java/filmsarchive/thingcinema/com/filmsarchiveapp/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/app/src/main/java/filmsarchive/thingcinema/com/filmsarchiveapp/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/app/src/main/java/filmsarchive/thingcinema/com/filmsarchiveapp/views/MovieArchive/MovieArchivePresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/app/src/main/java/filmsarchive/thingcinema/com/filmsarchiveapp/views/MovieArchive/MovieArchivePresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/app/src/main/java/filmsarchive/thingcinema/com/filmsarchiveapp/views/MovieArchive/MoviesAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/app/src/main/java/filmsarchive/thingcinema/com/filmsarchiveapp/views/MovieArchive/MoviesAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/app/src/main/res/layout/fragment_drawer_and_title.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/app/src/main/res/layout/fragment_drawer_and_title.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/app/src/main/res/layout/movie_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/app/src/main/res/layout/movie_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/thingcinema/filmsarchive/repositories/InMemoryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/thingcinema/filmsarchive/repositories/InMemoryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thingcinema/filmsarchive/repositories/InMemoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thingcinema/filmsarchive/repositories/InMemoryRepository.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -30,7 +26,8 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.54" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -41,6 +38,16 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="9" />
         </counts>
       </usages-collector>
     </session>
@@ -55,12 +62,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/thingcinema/filmsarchive/repositories/InMemoryRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            <state relative-caret-position="272">
+              <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -73,7 +80,7 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="C:\Users\Nikola\.gradle\wrapper\dists\gradle-4.8.1-bin\e8p42vx1m7a3mz9ydmjagn6wn\gradle-4.8.1" />
+        <entry key="$PROJECT_DIR$" value="C:\Users\DOBREV\.gradle\wrapper\dists\gradle-4.8.1-bin\e8p42vx1m7a3mz9ydmjagn6wn\gradle-4.8.1" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -300,7 +307,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6144583617550" />
+        <entry key="$PROJECT_DIR$" value="6144277590006" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="3657700391" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="1613248354" />
@@ -433,6 +440,13 @@
       </map>
     </option>
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/thingcinema/filmsarchive/repositories/InMemoryRepository.java" />
+      </list>
+    </option>
+  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
@@ -450,36 +464,34 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="films-archive" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="films-archive" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="films-archive" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="films-archive" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="films-archive" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
@@ -487,7 +499,7 @@
               <item name="filmsarchive" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="films-archive" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
@@ -496,7 +508,7 @@
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="films-archive" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
@@ -508,6 +520,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -517,7 +531,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536516489681" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536518114967" />
     <property name="last_opened_file_path" value="$USER_HOME$/AndroidStudioProjects/BelotCountingApp" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -555,17 +569,18 @@
       <updated>1536069458387</updated>
       <workItem from="1536069461197" duration="2497000" />
       <workItem from="1536511590506" duration="168000" />
+      <workItem from="1536564731975" duration="2301000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4589000" />
+    <option name="totallyTimeSpent" value="6890000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2657718" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -618,8 +633,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thingcinema/filmsarchive/repositories/InMemoryRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        <state relative-caret-position="272">
+          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
         </state>
       </provider>
     </entry>
