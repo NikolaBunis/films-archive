@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#05560d"
+    android:background="#ededed"
     android:orientation="horizontal"
     tools:context=".views.MovieArchive.DrawerAndTitleFragment">
 
@@ -28,7 +28,7 @@
         android:textAlignment="center"
         android:textSize="25sp"
         android:textAllCaps="true"
-        android:textColor="#ffffff"
+        android:textColor="#000000"
         android:textStyle="bold" />
 
 
