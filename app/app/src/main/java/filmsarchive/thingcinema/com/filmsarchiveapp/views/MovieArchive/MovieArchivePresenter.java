@@ -37,8 +37,8 @@ public class MovieArchivePresenter implements MovieArchiveContracts.Presenter{
             List<Movie> movies = mMovieService.getAllMovies();
             emitter.onNext(movies);
             emitter.onComplete();
-        }).subscribeOn(mSchedulerProvider.background()).observeOn(mSchedulerProvider.ui()).doFinally(mView::hideLoading).subscribe(
-                this::presentMoviesToView, error -> mView.showError(error)
+        }).subscribeOn(mSchedulerProvider.background()).observeOn(mSchedulerProvider.ui()).doFinally(mView::hideLoading)
+                .subscribe(this::presentMoviesToView, error -> mView.showError(error)
         );
     }
 

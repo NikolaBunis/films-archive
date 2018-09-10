@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:background="@color/primary_dark"
+            android:background="#408747"
             android:orientation="vertical">
 
             <TextView
@@ -25,14 +25,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                android:textColor="@color/primary_light" />
+                android:textColor="#ffffff" />
 
             <TextView
                 android:id="@+id/textView_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                android:textColor="@color/primary_light" />
+                android:textColor="#ffffff" />
         </LinearLayout>
     </RelativeLayout>
 
