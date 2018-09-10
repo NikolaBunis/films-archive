@@ -15,6 +15,10 @@ public class Movie implements Serializable {
         this.urlImage = urlImage;
     }
 
+    public Movie() {
+
+    }
+
     public int getId() {
         return id;
     }
