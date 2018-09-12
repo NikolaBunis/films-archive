@@ -132,6 +132,7 @@ public class MovieArchiveFragment extends Fragment implements MovieArchiveContra
     @Override
     public void addMovies(List<Movie> movies) {
 
+        mMoviesAdapter.clear();
         mMoviesAdapter.addAll(movies);
 
     }

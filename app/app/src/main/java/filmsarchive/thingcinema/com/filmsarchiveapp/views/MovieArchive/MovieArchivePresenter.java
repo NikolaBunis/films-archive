@@ -1,6 +1,5 @@
 package filmsarchive.thingcinema.com.filmsarchiveapp.views.MovieArchive;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import io.reactivex.Observable;
@@ -19,7 +18,6 @@ public class MovieArchivePresenter implements MovieArchiveContracts.Presenter{
     private final MovieService mMovieService;
     private final SchedulerProvider mSchedulerProvider;
     private MovieArchiveContracts.View mView;
-    private List<Movie> currentMovies = new ArrayList<>();
 
     @Inject
     public MovieArchivePresenter(MovieService MovieService, SchedulerProvider SchedulerProvider) {
@@ -49,16 +47,7 @@ public class MovieArchivePresenter implements MovieArchiveContracts.Presenter{
             mView.showEmptyList();
         }else{
 
-            for (Movie movie: movies) {
-
-                if (!currentMovies.contains(movie)){
-                    currentMovies.add(movie);
-                }
-
-            }
-
-
-            mView.addMovies(currentMovies);
+            mView.addMovies(movies);
         }
     }
 
